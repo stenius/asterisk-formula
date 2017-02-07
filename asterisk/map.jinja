@@ -8,4 +8,13 @@
         'user': 'asterisk',
         'group': 'asterisk',
     },
+    'Ubuntu': {
+        'service': 'asterisk',
+        'pkg_asterisk': 'asterisk',
+        'pkg_prompt': 'asterisk-prompt-',
+        'pkg_voicemail': 'asterisk-voicemail',
+        'config_dir': '/etc/asterisk',
+        'user': 'asterisk',
+        'group': 'asterisk',
+    },
 }, grain='os', merge=salt['pillar.get']('asterisk:lookup')) %}
